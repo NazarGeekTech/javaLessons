@@ -20,8 +20,8 @@ public class Main {
         }
         System.out.println("Here are average numbers of positive down below ");
         System.out.println(positiveCount / 12);
+
         // additional homeWork
-        ArrayList oneTwo = new ArrayList();
         Arrays.sort(has15Elements);
         System.out.println(Arrays.toString(has15Elements));
     }
