@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
@@ -6,7 +7,7 @@ public class Main {
     public static int bossDamage = 50;
     public static String bossDefenceType = "";
     public static int[] heroesHealth = {250, 260, 270, 500, 600, 230, 200, 200};
-    public static int[] heroesDamage = {20, 15, 25, 0, 5, 10, 15,25};
+    public static int[] heroesDamage = {20, 15, 25, 0, 5, 10, 15, 25};
     public static String[] heroesAttackType = {"Physical",
             "Magical", "Kinetic", "Medic", "Golem", "Lucky", "Berserk", "Thor"};
     public static int roundNumber = 0;
@@ -105,7 +106,6 @@ public class Main {
     }
 
 
-
     public static void heroesHit() {
         for (int i = 0; i < heroesDamage.length; i++) {
             if (heroesHealth[i] > 0) {
@@ -167,13 +167,19 @@ public class Main {
     }/* End of playrGolem method */
 
     public static void playerLucky() {
+        boolean luckGamer = false;
         Random r = new Random();
+        Scanner  userSolve = new Scanner(System.in);
         int luckRandom = r.nextInt(2) + 1;
         if (heroesHealth[5] > 0) {
             if (luckRandom == 1) {
-                heroesHealth[5] += bossDamage;
-                System.out.println("Our lucky hero got luck ");
+                luckGamer = true;
+                if (luckGamer) {
+                    heroesHealth[5] += bossDamage;
+                    System.out.println("Our lucky hero got luck ");
+                }
             }
+
 
         }
 
