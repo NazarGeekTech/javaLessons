@@ -1,4 +1,4 @@
-package com.company;
+package kg.geek.less6.homeWork;
 
 import kg.geek.less6.homeWork.GameEntity;
 import kg.geek.less6.homeWork.Weapon;

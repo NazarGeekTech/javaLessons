@@ -1,6 +1,7 @@
 package com.company;
 
 
+import kg.geek.less6.homeWork.Boss;
 import kg.geek.less6.homeWork.Weapon;
 
 public class Main {
