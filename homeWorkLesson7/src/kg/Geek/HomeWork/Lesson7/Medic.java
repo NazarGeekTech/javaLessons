@@ -9,8 +9,6 @@ public class Medic extends Hero {
 
     @Override
     public void applySuperAbility(String superAbilityType) {
-        System.out.println(" Medic has used his super ability >> " + getTypeOfSuperAbility() + " HEALING --" + "Health >> " + getHealth() + " Damage >> " + getDamage());
+        System.out.println(superAbilityType);
     }
-
-
 }

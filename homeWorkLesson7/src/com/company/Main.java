@@ -8,23 +8,20 @@ import kg.Geek.HomeWork.Lesson7.HavingSuperAbility;
 public class Main {
 
     public static void main(String[] args) {
-        HavingSuperAbility medic = new Medic(300,0,"MEDICAL");
-        HavingSuperAbility magic = new Magic(400,50,"MEDICAL");
-        HavingSuperAbility warrior = new Warrior(300,50,"CRITICAL");
-
-//      и реализовать интерфейс HavingSuperAbility.
-        Hero hero = new Hero() {
-            @Override
-            public void applySuperAbility(String superAbilityType) {
-            }
-        };
+        HavingSuperAbility medic = new Medic(300, 0, "can heal");
+        HavingSuperAbility magic = new Magic(400, 50, "can fight");
+        HavingSuperAbility warrior = new Warrior(300, 50, "can chop of the head");
         HavingSuperAbility[] superAbilities = {medic, magic, warrior};
-        for (HavingSuperAbility h : superAbilities) {
-            getInfo(h);
-        }
-    }
-    public static void getInfo(HavingSuperAbility power) {
-        power.applySuperAbility("CRITICAL DAMAGE");
-    }
 
+        for (HavingSuperAbility h : superAbilities) {
+            if (h == superAbilities[0]) {
+                h.applySuperAbility("MEDIC HEALED");
+            } else if (h == superAbilities[1]) {
+                h.applySuperAbility("MAGICAL DAMAGE");
+            } else {
+                h.applySuperAbility("CRITICAL DAMAGE");
+            }
+        }
+
+    }
 }

@@ -11,6 +11,7 @@ public abstract class Hero implements HavingSuperAbility{
         this.damage = damage;
         this.typeOfSuperAbility = typeOfSuperAbility;
     }
+
     public Hero(){}
 //   GETTERS
     public int getHealth() {
@@ -20,9 +21,7 @@ public abstract class Hero implements HavingSuperAbility{
         return damage;
     }
 
-
     public String getTypeOfSuperAbility() {
         return typeOfSuperAbility;
     }
-
 }
