@@ -1,0 +1,6 @@
+package kg.geek.les8.players;
+
+public enum SuperAbility {
+    CRITICAL_DAMAGE, BOOST, HEAL, SAVE_DAMAGE_AND_REVERT,MAKES_SLEEP_THE_BOSS,
+    TAKES_1_5_DAMAGE_FROM_BOSS,CAN_GIVE_OWN_LIVE,
+}

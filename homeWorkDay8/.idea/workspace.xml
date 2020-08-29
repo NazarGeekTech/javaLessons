@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6432ad4-24ab-4f08-b180-ab575dd19628" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="30f47f44-8630-4549-913c-a6910379faad" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,22 +11,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectId" id="1gcfzIkFi5HPBnvlJtEtmOTP5d2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-  </component>
+  <component name="ProjectId" id="1ggtB4zf0S65so5gCbvzecfDMeo" />
   <component name="RecentsManager">
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kg.geek.les8.players" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -45,8 +37,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="homeWorkLesson7" />
+      <option name="MAIN_CLASS_NAME" value="kg.geek.les8.game.Main" />
+      <module name="homeWorkDay8" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -65,23 +57,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b6432ad4-24ab-4f08-b180-ab575dd19628" name="Default Changelist" comment="" />
-      <created>1598419062027</created>
+      <changelist id="30f47f44-8630-4549-913c-a6910379faad" name="Default Changelist" comment="" />
+      <created>1598547924996</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1598419062027</updated>
+      <updated>1598547924996</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
