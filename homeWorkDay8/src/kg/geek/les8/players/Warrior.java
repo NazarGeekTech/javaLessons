@@ -12,10 +12,10 @@ public class Warrior extends Hero {
     public void applySuperAbility(Boss boss, Hero[] heroes) {
         Random ran = new Random();
         int ranForWarrior = ran.nextInt(3)+2;
-//        if (this.getDamage() == 20){
-//            this.setDamage(this.getDamage() + ranForWarrior);
-//        }
-//        System.out.println(this.getClass().getSimpleName() + "  " + ranForWarrior);
+        if (this.getDamage() == 20){
+            this.setDamage(this.getDamage() + ranForWarrior);
+        }
+        System.out.println(this.getClass().getSimpleName() + "  " + ranForWarrior);
 
     }
 }
