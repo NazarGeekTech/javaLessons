@@ -5,7 +5,7 @@ import kg.geek.les8.players.*;
 public class RPG_Game {
 
     public static void startGame() {
-        Boss boss = new Boss(50, 1400);
+        Boss boss = new Boss(50, 800);
 
         Warrior warrior = new Warrior(20, 100);
         Medic old_docR = new Medic(0, 100, 10, "old_DocR");
