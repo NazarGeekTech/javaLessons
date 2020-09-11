@@ -18,11 +18,8 @@ public class MobilePhone extends Phone {
         this.bodyType = bodyType;
         this.wrapSpeedProcessor = wrapSpeedProcessor;
     }
+    public  MobilePhone(){}
 
-    public MobilePhone() {
-    }
-
-    ;
 
     /* i need this setters to set the values to empty constructor :) */
     public void setBodyType(String bodyType) {

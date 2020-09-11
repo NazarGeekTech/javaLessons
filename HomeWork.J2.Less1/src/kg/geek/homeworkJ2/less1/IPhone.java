@@ -1,7 +1,7 @@
 package kg.geek.homeworkJ2.less1;
 
 
-import java.lang.ref.PhantomReference;
+
 
 public final class IPhone extends MobilePhone {
     private String generationOfPhone;
@@ -24,11 +24,7 @@ public final class IPhone extends MobilePhone {
         this.modelOfPhone = modelOfPhone;
     }
 
-    public IPhone(String generationOfPhone, String modelOfPhone, CurrentLevelOfBattery currentLevelOfBattery) {
-        this.generationOfPhone = generationOfPhone;
-        this.modelOfPhone = modelOfPhone;
-        this.currentLevelOfBattery = currentLevelOfBattery;
-    }
+    public IPhone() {}
 
 
     public String getGenerationOfPhone() {
@@ -39,10 +35,19 @@ public final class IPhone extends MobilePhone {
         return modelOfPhone;
     }
 
-    public CurrentLevelOfBattery currentLevelOfBattery() {
-        return currentLevelOfBattery;
+
+
+    public void setGenerationOfPhone(String generationOfPhone) {
+        this.generationOfPhone = generationOfPhone;
     }
 
+    public void setModelOfPhone(String modelOfPhone) {
+        this.modelOfPhone = modelOfPhone;
+    }
+
+    public void setCurrentLevelOfBattery(CurrentLevelOfBattery currentLevelOfBattery) {
+        this.currentLevelOfBattery = currentLevelOfBattery;
+    }
 
     @Override
     public String allAboutPhone() {

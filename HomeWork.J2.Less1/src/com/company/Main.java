@@ -60,6 +60,23 @@ public class Main {
         iPhone1.daileTo("Ariet");
 
 
+//  to use setters
+//        private String bodyType;
+//        private String wrapSpeedProcessor;
+        System.out.println("------------------");
+        IPhone iPhone2 = new IPhone();
+        iPhone2.setCurrentLevelOfBattery(CurrentLevelOfBattery.HIGH);
+        iPhone2.setGenerationOfPhone("8th generation");
+        iPhone2.setModelOfPhone("XR with double touch");
+        iPhone2.setWrapSpeedProcessor("Apple A13 Bionic");
+        iPhone2.setBodyType("local variates");
+        System.out.println(iPhone2.allAboutPhone());
+        iPhone2.daileTo(434364,"Kendric");
+        iPhone2.daileTo("Omel",579302, "Jamaica");
+        iPhone2.daileTo("Fam");
+
+
+
 
 
 
