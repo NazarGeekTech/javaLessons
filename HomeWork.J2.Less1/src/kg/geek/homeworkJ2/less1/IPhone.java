@@ -1,13 +1,14 @@
 package kg.geek.homeworkJ2.less1;
 
 
-
-
 public final class IPhone extends MobilePhone {
     private String generationOfPhone;
     private String modelOfPhone;
     private CurrentLevelOfBattery currentLevelOfBattery;
 
+    public CurrentLevelOfBattery getCurrentLevelOfBattery() {
+        return currentLevelOfBattery;
+    }
 
     public IPhone(int year, TypeOfBatteries typeOfBatteries, String typeOfBody,
                   String wrapSpeedProcessor, String generationOfPhone, String modelOfPhone, CurrentLevelOfBattery currentLevelOfBattery) {
@@ -24,7 +25,8 @@ public final class IPhone extends MobilePhone {
         this.modelOfPhone = modelOfPhone;
     }
 
-    public IPhone() {}
+    public IPhone() {
+    }
 
 
     public String getGenerationOfPhone() {
@@ -34,7 +36,6 @@ public final class IPhone extends MobilePhone {
     public String getModelOfPhone() {
         return modelOfPhone;
     }
-
 
 
     public void setGenerationOfPhone(String generationOfPhone) {
@@ -71,7 +72,7 @@ public final class IPhone extends MobilePhone {
 
     @Override
     public void daileTo(String name, int phoneNumber, String region) {
-       super.daileTo(name,phoneNumber,region);
+        super.daileTo(name, phoneNumber, region);
         if (currentLevelOfBattery == CurrentLevelOfBattery.RUNNING_LOW) {
             System.out.println("Your call may over soon since your battery is Running low");
         } else if (currentLevelOfBattery == CurrentLevelOfBattery.HIGH) {
@@ -79,6 +80,24 @@ public final class IPhone extends MobilePhone {
         } else {
             System.out.println("Do what you need to do ");
         }
+    }
+
+
+    /*На сообразительность
+h)  Написать метод в классе 3-го уровня который бы копировал некоторые свойства из себеподобного объекта
+i)  Затем скопировать несколько свойств из objectB в objectC и распечатать информацию по objectC*/
+
+
+    public IPhone(IPhone iPhone) {
+        modelOfPhone = iPhone.modelOfPhone;
+        currentLevelOfBattery = iPhone.currentLevelOfBattery;
+        generationOfPhone = iPhone.generationOfPhone;
+
+
+    }
+    public void throwInfo(){
+        System.out.println("generation Of Phone "+this.generationOfPhone+ "\ncurrentLevel Of Battery "+this.currentLevelOfBattery +
+                "\nmodel Of Phone "+this.modelOfPhone);
     }
 
 }

@@ -60,9 +60,8 @@ public class Main {
         iPhone1.daileTo("Ariet");
 
 
-//  to use setters
-//        private String bodyType;
-//        private String wrapSpeedProcessor;
+//   to use setters
+
         System.out.println("------------------");
         IPhone iPhone2 = new IPhone();
         iPhone2.setCurrentLevelOfBattery(CurrentLevelOfBattery.HIGH);
@@ -74,6 +73,15 @@ public class Main {
         iPhone2.daileTo(434364,"Kendric");
         iPhone2.daileTo("Omel",579302, "Jamaica");
         iPhone2.daileTo("Fam");
+
+        System.out.println("__________________");
+
+        IPhone iPhone3 = new IPhone(iPhone2);
+        System.out.println(iPhone3.getGenerationOfPhone()+ " " + iPhone3.getModelOfPhone() + " " +iPhone2.getCurrentLevelOfBattery());
+
+
+
+
 
 
 
